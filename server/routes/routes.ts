@@ -1,6 +1,6 @@
 import express, { Request } from "express";
 import { FilterQuery } from "mongoose";
-import Model from "../models/models.js";
+import Model from "../models/models";
 export const router = express.Router();
 
 interface QueryParams {
