@@ -11,8 +11,10 @@
 /coverage
 
 # production
-/build
-/dist
+node_modules
+dist
+build
+
 
 # misc
 .DS_Store
