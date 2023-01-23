@@ -1,1 +1,1 @@
-# express-mongodb
+# MERN Test Application
