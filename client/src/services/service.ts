@@ -1,3 +1,5 @@
+import { baseUrl } from "./baseUrl";
+import axios from "axios";
 
 
 export namespace Service {
@@ -11,6 +13,8 @@ export namespace Service {
         age: number;
     }
 
-
+  export const get = (payload: QueryParams) => {
+    return axios.get(`${baseUrl}/api/get`, {params: {...payload}});
+  }
 
 }

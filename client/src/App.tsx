@@ -1,9 +1,20 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { Service } from "./services/service";
+import { useQuery } from "react-query";
 
+const samplePayload = {
+  name: 'Dom',
+  minAge :1,
+  maxAge: 100,
+}
+const {get} = Service;
 function App() {
-  const [count, setCount] = useState(0)
+
+  const {data} = useQuery('todos', () => get(samplePayload));
+
+  console.log(data);
 
   return (
     <div className="App">
